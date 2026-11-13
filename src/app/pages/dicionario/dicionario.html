@@ -1,0 +1,486 @@
+<app-toolbar></app-toolbar>
+
+<h2> Palavras que só a Família Benevides entende!</h2>
+<p>Descubra o verdadeiro significado das expressões mais curiosas da nossa família.</p>
+
+
+
+<section class="dicionario">
+
+  <div class="container-div">
+
+<mat-card class="word-card" appearance="outlined">
+
+  <mat-card-header>
+    <div mat-card-avatar class="word-icon">
+      <mat-icon>book</mat-icon>
+    </div>
+
+    <mat-card-title>Drome</mat-card-title>
+  </mat-card-header>
+
+  @if (expandedCards.includes(1)) {
+  <mat-card-content class="word-content">
+
+    <p class="word-label">Forma correta da palavra</p>
+
+    <h3>Dormir</h3>
+
+    <p>Aquele momento em que o sono chega e a cama se torna o melhor lugar do mundo.</p>
+
+  </mat-card-content>
+}
+
+
+  <mat-card-actions>
+ <button matButton="filled"
+        class="word-button"
+        (click)="toggleExpanded(1)">
+
+  {{ expandedCards.includes(1) ? 'Ocultar palavra' : 'Descobrir palavra' }}
+
+  <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+</button>
+  </mat-card-actions>
+</mat-card>
+
+
+
+<mat-card class="word-card" appearance="outlined">
+
+  <mat-card-header>
+    <div mat-card-avatar class="word-icon">
+      <mat-icon>book</mat-icon>
+    </div>
+
+    <mat-card-title>Onton</mat-card-title>
+  </mat-card-header>
+
+   @if (expandedCards.includes(2)) {
+  <mat-card-content class="word-content">
+
+    <p class="word-label">Forma correta da palavra</p>
+
+    <h3>Então</h3>
+
+    <p>Uma palavrinha usada para continuar uma conversa ou chegar a uma conclusão.</p>
+
+  </mat-card-content>
+}
+
+
+  <mat-card-actions>
+  <button matButton="filled"
+        class="word-button"
+        (click)="toggleExpanded(2)">
+
+  {{ expandedCards.includes(2) ? 'Ocultar palavra' : 'Descobrir palavra' }}
+
+  <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+</button>
+  </mat-card-actions>
+</mat-card>
+
+
+
+
+
+<mat-card class="word-card" appearance="outlined">
+
+  <mat-card-header>
+    <div mat-card-avatar class="word-icon">
+      <mat-icon>book</mat-icon>
+    </div>
+
+    <mat-card-title>A refrigerante</mat-card-title>
+  </mat-card-header>
+
+ @if (expandedCards.includes(3)) {
+  <mat-card-content class="word-content">
+
+    <p class="word-label">Forma correta da palavra</p>
+
+    <h3>O refrigerante</h3>
+
+    <p>Aquela bebida geladinha que não pode faltar para acompanhar um bom lanche.</p>
+
+  </mat-card-content>
+}
+
+
+  <mat-card-actions>
+     <button matButton="filled"
+        class="word-button"
+        (click)="toggleExpanded(3)">
+
+  {{ expandedCards.includes(3) ? 'Ocultar palavra' : 'Descobrir palavra' }}
+
+  <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+</button>
+  </mat-card-actions>
+</mat-card>
+
+
+
+
+<mat-card class="word-card" appearance="outlined">
+
+  <mat-card-header>
+    <div mat-card-avatar class="word-icon">
+      <mat-icon>book</mat-icon>
+    </div>
+
+    <mat-card-title>Organizamento</mat-card-title>
+  </mat-card-header>
+
+  @if (expandedCards.includes(4)) {
+  <mat-card-content class="word-content">
+
+    <p class="word-label">Forma correta da palavra</p>
+
+    <h3>Organização</h3>
+
+    <p>É quando tudo fica no seu devido lugar e a bagunça finalmente tira férias.</p>
+
+  </mat-card-content>
+}
+
+
+  <mat-card-actions>
+   <button matButton="filled"
+        class="word-button"
+        (click)="toggleExpanded(4)">
+
+  {{ expandedCards.includes(4) ? 'Ocultar palavra' : 'Descobrir palavra' }}
+
+  <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+</button>
+  </mat-card-actions>
+</mat-card>
+
+
+<mat-card class="word-card" appearance="outlined">
+
+  <mat-card-header>
+    <div mat-card-avatar class="word-icon">
+      <mat-icon>book</mat-icon>
+    </div>
+
+    <mat-card-title>Ragabundo</mat-card-title>
+  </mat-card-header>
+
+  @if (expandedCards.includes(5)) {
+  <mat-card-content class="word-content">
+
+    <p class="word-label">Forma correta da palavra</p>
+
+    <h3>Vagabundo</h3>
+
+    <p>Aquele que gosta de ficar sem fazer muita coisa e aproveitar a tranquilidade.</p>
+
+  </mat-card-content>
+}
+
+
+  <mat-card-actions>
+   <button matButton="filled"
+        class="word-button"
+        (click)="toggleExpanded(5)">
+
+  {{ expandedCards.includes(5) ? 'Ocultar palavra' : 'Descobrir palavra' }}
+
+  <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+</button>
+  </mat-card-actions>
+</mat-card>
+
+
+<mat-card class="word-card" appearance="outlined">
+
+  <mat-card-header>
+    <div mat-card-avatar class="word-icon">
+      <mat-icon>book</mat-icon>
+    </div>
+
+    <mat-card-title>Ordi</mat-card-title>
+  </mat-card-header>
+
+  @if (expandedCards.includes(6)) {
+  <mat-card-content class="word-content">
+
+    <p class="word-label">Forma correta da palavra</p>
+
+    <h3>Ordem</h3>
+
+    <p>A maneira de deixar tudo organizado, cada coisa no lugar certo.</p>
+
+  </mat-card-content>
+}
+
+
+  <mat-card-actions>
+   <button matButton="filled"
+        class="word-button"
+        (click)="toggleExpanded(6)">
+
+  {{ expandedCards.includes(6) ? 'Ocultar palavra' : 'Descobrir palavra' }}
+
+  <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+</button>
+  </mat-card-actions>
+</mat-card>
+
+
+<mat-card class="word-card" appearance="outlined">
+
+  <mat-card-header>
+    <div mat-card-avatar class="word-icon">
+      <mat-icon>book</mat-icon>
+    </div>
+
+    <mat-card-title>Abaixar</mat-card-title>
+  </mat-card-header>
+
+  @if (expandedCards.includes(7)) {
+  <mat-card-content class="word-content">
+
+    <p class="word-label">Forma correta da palavra</p>
+
+    <h3>Baixar</h3>
+
+    <p>É quando queremos fazer o download de uma música, vídeo ou arquivo para guardar no celular ou computador.</p>
+
+  </mat-card-content>
+}
+
+
+  <mat-card-actions>
+   <button matButton="filled"
+        class="word-button"
+        (click)="toggleExpanded(7)">
+
+  {{ expandedCards.includes(7) ? 'Ocultar palavra' : 'Descobrir palavra' }}
+
+  <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+</button>
+  </mat-card-actions>
+</mat-card>
+
+
+<mat-card class="word-card" appearance="outlined">
+
+  <mat-card-header>
+    <div mat-card-avatar class="word-icon">
+      <mat-icon>book</mat-icon>
+    </div>
+
+    <mat-card-title>Otoridade</mat-card-title>
+  </mat-card-header>
+
+  @if (expandedCards.includes(8)) {
+  <mat-card-content class="word-content">
+
+    <p class="word-label">Forma correta da palavra</p>
+
+    <h3>Autoridade</h3>
+
+    <p>Quem tem responsabilidade para orientar, tomar decisões e colocar ordem na casa.</p>
+
+  </mat-card-content>
+}
+
+
+  <mat-card-actions>
+   <button matButton="filled"
+        class="word-button"
+        (click)="toggleExpanded(8)">
+
+  {{ expandedCards.includes(8) ? 'Ocultar palavra' : 'Descobrir palavra' }}
+
+  <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+</button>
+  </mat-card-actions>
+</mat-card>
+
+<mat-card class="word-card" appearance="outlined">
+
+  <mat-card-header>
+    <div mat-card-avatar class="word-icon">
+      <mat-icon>book</mat-icon>
+    </div>
+
+    <mat-card-title>Ecolomia</mat-card-title>
+  </mat-card-header>
+
+  @if (expandedCards.includes(9)) {
+  <mat-card-content class="word-content">
+
+    <p class="word-label">Forma correta da palavra</p>
+
+    <h3>Economia</h3>
+
+    <p>A arte de cuidar do dinheiro para ele não desaparecer antes do fim do mês</p>
+
+  </mat-card-content>
+}
+
+
+  <mat-card-actions>
+   <button matButton="filled"
+        class="word-button"
+        (click)="toggleExpanded(9)">
+
+  {{ expandedCards.includes(9) ? 'Ocultar palavra' : 'Descobrir palavra' }}
+
+  <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+</button>
+  </mat-card-actions>
+</mat-card>
+
+
+<mat-card class="word-card" appearance="outlined">
+
+  <mat-card-header>
+    <div mat-card-avatar class="word-icon">
+      <mat-icon>book</mat-icon>
+    </div>
+
+    <mat-card-title>Biza</mat-card-title>
+  </mat-card-header>
+
+  @if (expandedCards.includes(10)) {
+  <mat-card-content class="word-content">
+
+    <p class="word-label">Forma correta da palavra</p>
+
+    <h3>Biz</h3>
+
+    <p>Aquela motocicleta popular, conhecida por ser econômica e prática para passear por aí.</p>
+
+  </mat-card-content>
+}
+
+
+  <mat-card-actions>
+   <button matButton="filled"
+        class="word-button"
+        (click)="toggleExpanded(10)">
+
+  {{ expandedCards.includes(10) ? 'Ocultar palavra' : 'Descobrir palavra' }}
+
+  <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+</button>
+  </mat-card-actions>
+</mat-card>
+
+
+<mat-card class="word-card" appearance="outlined">
+
+  <mat-card-header>
+    <div mat-card-avatar class="word-icon">
+      <mat-icon>book</mat-icon>
+    </div>
+
+    <mat-card-title>Galfo</mat-card-title>
+  </mat-card-header>
+
+  @if (expandedCards.includes(11)) {
+  <mat-card-content class="word-content">
+
+    <p class="word-label">Forma correta da palavra</p>
+
+    <h3>Garfo</h3>
+
+    <p>O companheiro do prato que ajuda a levar a comida até a boca.</p>
+
+  </mat-card-content>
+}
+
+
+  <mat-card-actions>
+   <button matButton="filled"
+        class="word-button"
+        (click)="toggleExpanded(11)">
+
+  {{ expandedCards.includes(11) ? 'Ocultar palavra' : 'Descobrir palavra' }}
+
+  <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+</button>
+  </mat-card-actions>
+</mat-card>
+
+
+<mat-card class="word-card" appearance="outlined">
+
+  <mat-card-header>
+    <div mat-card-avatar class="word-icon">
+      <mat-icon>book</mat-icon>
+    </div>
+
+    <mat-card-title>Chancha</mat-card-title>
+  </mat-card-header>
+
+  @if (expandedCards.includes(12)) {
+  <mat-card-content class="word-content">
+
+    <p class="word-label">Forma correta da palavra</p>
+
+    <h3>Chance</h3>
+
+    <p>Aquela oportunidade que aparece e merece ser aproveitada.</p>
+
+  </mat-card-content>
+}
+
+
+  <mat-card-actions>
+   <button matButton="filled"
+        class="word-button"
+        (click)="toggleExpanded(12)">
+
+  {{ expandedCards.includes(12) ? 'Ocultar palavra' : 'Descobrir palavra' }}
+
+  <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+</button>
+  </mat-card-actions>
+</mat-card>
+
+<mat-card class="word-card" appearance="outlined">
+
+  <mat-card-header>
+    <div mat-card-avatar class="word-icon">
+      <mat-icon>book</mat-icon>
+    </div>
+
+    <mat-card-title>Cender</mat-card-title>
+  </mat-card-header>
+
+  @if (expandedCards.includes(13)) {
+  <mat-card-content class="word-content">
+
+    <p class="word-label">Forma correta da palavra</p>
+
+    <h3>Acender</h3>
+
+    <p>Ação de fazer uma luz, chama ou aparelho começar a funcionar.</p>
+
+  </mat-card-content>
+}
+
+
+  <mat-card-actions>
+   <button matButton="filled"
+        class="word-button"
+        (click)="toggleExpanded(13)">
+
+  {{ expandedCards.includes(13) ? 'Ocultar palavra' : 'Descobrir palavra' }}
+
+  <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+</button>
+  </mat-card-actions>
+</mat-card>
+
+
+</div>
+
+</section>

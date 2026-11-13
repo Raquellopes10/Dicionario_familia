@@ -1,0 +1,129 @@
+:host {
+    display: block;
+    background-color: #F5E8D3;
+    min-height: 100vh;
+      padding: 24px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: 'Abyssinica SIL';
+    color: #653D2B;
+}
+
+p {
+    text-align: left;
+    font-size: 1.2em;
+    margin-top: 5px;
+    font-family: 'Abyssinica SIL';
+    color: #653D2B;
+}
+
+.word-card {
+ width: 100%;
+ max-width: 320px;
+  box-sizing: border-box;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.word-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0;
+  border-radius: 4px;
+  background-color: #F5E8D3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-icon {
+  color: #653D2B;
+}
+
+.word-card mat-card-title {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #343B2F;
+}
+
+.word-card mat-card-actions {
+   display: flex;
+  justify-content: center;
+  padding: 8px 16px 12px;
+  margin-top: auto !important;
+  margin-bottom: 0;
+}
+
+.word-button {
+  width: 200px;
+  height: 32px;
+  min-width: unset;
+  border-radius: 5px;
+  background-color: #B95E35;
+  color: #FFFFFF;
+
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 4px;
+white-space: nowrap;
+box-sizing: border-box;
+border: none;
+}
+
+.arrow-icon {
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+.word-content{
+    background-color: #F5E8D3;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.container-div {
+   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+
+  align-items: start;
+}
+
+.dicionario {
+  padding: 24px;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .container-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .container-div {
+    grid-template-columns: 1fr;
+  }
+}

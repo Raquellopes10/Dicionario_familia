@@ -1,0 +1,24 @@
+
+:host {
+    display: block;
+    background-color: #F5E8D3;
+    min-height: 100vh;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-family: 'Abyssinica SIL';
+    color: #653D2B;
+    padding-top: 80px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 5px;
+    font-family: 'Abyssinica SIL';
+    color: #653D2B;
+    padding-top: 30px;
+}

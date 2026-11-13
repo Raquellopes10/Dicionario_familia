@@ -1,0 +1,13 @@
+
+<div class="home">
+
+  <button class="menu-toggle" (click)="toggleMenu()">
+    <mat-icon>{{ menuAberto ? 'close' : 'menu' }}</mat-icon>
+  </button>
+
+  <ul [class.menu-aberto]="menuAberto">
+    <li><a href="/">Home</a></li>
+    <li><a href="/dicionario">Dicionário</a></li>
+  </ul>
+
+</div>
